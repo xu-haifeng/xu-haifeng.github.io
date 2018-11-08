@@ -1,5 +1,5 @@
 var news = new Array();
-
+news[26] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Nov 2018 </td><td>&nbsp; Give a talk on algorithmic persuasion at Harvard EconCS seminar.</td></tr>';
 news[25] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Sep 2018 </td><td>&nbsp; I am teaching <a href="https://www.seas.harvard.edu/academics/courses/computer-science">CS 182: Artificial Intelligence </a> at Harvard this Fall</td></tr>';  
 news[24] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Aug 2018 </td><td>&nbsp; Started my postdoc at Harvard </td></tr>'; 
 news[23] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; June 2018 </td><td>&nbsp; Defended <a href="files/phd_thesis_xu.pdf">my thesis</a>! </td></tr>'; 
