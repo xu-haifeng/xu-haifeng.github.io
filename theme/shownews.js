@@ -1,4 +1,5 @@
 var news = new Array();
+news[27] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Nov 2018 </td><td>&nbsp; Invited to participate (as the only non-economists) <a href="https://cirano.qc.ca/en/events/822">Workshop on Economics of Persuasion</a>.</td></tr>';
 news[26] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Nov 2018 </td><td>&nbsp; Give a talk on algorithmic persuasion at Harvard EconCS seminar.</td></tr>';
 news[25] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Sep 2018 </td><td>&nbsp; I am teaching <a href="https://www.seas.harvard.edu/academics/courses/computer-science">CS 182: Artificial Intelligence </a> at Harvard this Fall</td></tr>';  
 news[24] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Aug 2018 </td><td>&nbsp; Started my postdoc at Harvard </td></tr>'; 
