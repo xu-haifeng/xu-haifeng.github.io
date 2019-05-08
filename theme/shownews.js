@@ -1,6 +1,7 @@
 var news = new Array();
-news[28] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; April 2019 </td><td>&nbsp; Runner-up for the <a href="http://aamas2019.encs.concordia.ca/cfvl.html">IFAAMAS-18 Victor Lesser Distinguished Dissertation Award</a>.</td></tr>';
-news[27] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Nov 2018 </td><td>&nbsp; Invited to participate (as the only non-economists) <a href="https://cirano.qc.ca/en/events/822">Workshop on Economics of Persuasion</a>.</td></tr>';
+news[29] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; May 2019 </td><td>&nbsp; Check the program for our AAMAS-19 Workshop on <a href="https://jointworkshops.wixsite.com/aasg2019">Autonomous Agents for Social Good</a></td></tr>';
+news[28] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; April 2019 </td><td>&nbsp; Runner-up for the <a href="http://aamas2019.encs.concordia.ca/cfvl.html">IFAAMAS-18 Victor Lesser Distinguished Dissertation Award</a></td></tr>';
+news[27] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Nov 2018 </td><td>&nbsp; Invited to participate (as the only non-economists) <a href="https://cirano.qc.ca/en/events/822">Workshop on Economics of Persuasion</a></td></tr>';
 news[26] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Nov 2018 </td><td>&nbsp; Give a talk on algorithmic persuasion at Harvard EconCS seminar.</td></tr>';
 news[25] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Sep 2018 </td><td>&nbsp; I am teaching <a href="https://www.seas.harvard.edu/academics/courses/computer-science">CS 182: Artificial Intelligence </a> at Harvard this Fall</td></tr>';  
 news[24] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Aug 2018 </td><td>&nbsp; Started my postdoc at Harvard </td></tr>'; 
