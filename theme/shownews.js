@@ -1,7 +1,9 @@
 var news = new Array();
-news[30] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; May 2019 </td><td>&nbsp; Check our work (<a href="https://arxiv.org/pdf/1903.02917.pdf">ec’19</a>, <a href="files/attacker_deception.pdf">ijcai’19</a>) on analyzing equilibrium of learning against strategic agents</td></tr>';
-news[29] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; May 2019 </td><td>&nbsp; Check out the program of our AAMAS-19 Workshop <a href="https://jointworkshops.wixsite.com/aasg2019">Autonomous Agents for Social Good</a></td></tr>';
-news[28] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; April 2019 </td><td>&nbsp; Runner-up for the <a href="http://aamas2019.encs.concordia.ca/cfvl.html">IFAAMAS-18 Victor Lesser Distinguished Dissertation Award</a></td></tr>';
+news[32] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; June 2019 </td><td>&nbsp; My thesis received <a href="http://www.sigecom.org/awards.html">ACM SIGecom Doctoral Dissertation Award</a> runner-up</td></tr>';
+news[31] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; May 2019 </td><td>&nbsp; My thesis received <a href="http://aamas2019.encs.concordia.ca/cfvl.html">IFAAMAS-18 Victor Lesser Distinguished Dissertation Award</a> runner up</td></tr>';
+news[30] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; May 2019 </td><td>&nbsp; Our demo on  <a href="files/Drone-demo-19.pdf">drone signaling for conservation</a> wins Best Demo Award at AAMAS 2019</td></tr>';
+news[29] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; May 2019 </td><td>&nbsp; Check our work (<a href="https://arxiv.org/pdf/1903.02917.pdf">ec’19</a>, <a href="files/attacker_deception.pdf">ijcai’19</a>) on analyzing equilibrium of learning against strategic agents</td></tr>';
+news[28] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; May 2019 </td><td>&nbsp; Check out the program of our AAMAS-19 Workshop <a href="https://jointworkshops.wixsite.com/aasg2019">Autonomous Agents for Social Good</a></td></tr>';
 news[27] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Nov 2018 </td><td>&nbsp; Invited to participate (as the only non-economists) <a href="https://cirano.qc.ca/en/events/822">Workshop on Economics of Persuasion</a></td></tr>';
 news[26] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Nov 2018 </td><td>&nbsp; Give a talk on algorithmic persuasion at Harvard EconCS seminar.</td></tr>';
 news[25] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Sep 2018 </td><td>&nbsp; I am teaching <a href="https://www.seas.harvard.edu/academics/courses/computer-science">CS 182: Artificial Intelligence </a> at Harvard this Fall</td></tr>';  
