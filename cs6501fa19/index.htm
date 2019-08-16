@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0045)https://classes.cs.uoregon.edu/19S/cis410mas/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CS 6501: Topics in Learning and Game Theory  | University of Virginia</title>
+
+<link href="./theme/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+<link href="./theme/style.css" rel="stylesheet" type="text/css" media="screen">
+<style>
+.hw { color: red }		
+.hw a { color: red }		
+</style>
+</head>
+<body bgcolor="#6D7B8D" align="justify">
+<div id="container">
+<div id="content">
+<h2 align="center">CS 6501: Topics in Learning and Game Theory (Fall 2019) </h2> <hr>
+
+<h3>Basic Information</h3> 
+
+<!-- In this sophomore/junior level course (which should be taken after CIS 212 but
+before most 400-level courses) you will build a web-based software system and
+become familiar with a variety of issues that arise as we move beyond building
+individual programs into building more complex systems that exist in a larger
+software ecosystem. Compared to prior offerings, there will be a few changes
+this term including, but not limited to, Dockers and Test Driven Development. -->
+
+
+	<!-- <b>Prerequisites:</b> The pre-requisitive for CIS 322 is CIS 212 or equivalent. You may take CIS 322 concurrently with CIS 314 or CIS 313. It is preferable to take CIS 322 before CIS 330 and CIS 415, although it is not a pre-requisite. Students at the 400 level may take CIS 322, but you should be aware that the course is designed primarily for students at the 300 level.<br/><br/> -->
+
+	<b>Class Location:</b> Thornton Hall E303 <br>
+	<b>Class Time:</b> Tuesdays and Thursdays, 3:30pm to 4:45pm <br>
+	<!-- <b>Lab:</b> Friday from 10:00am to 10:50am (lab 1) and 1:00pm to 1:50pm (lab 2) in Deschutes room 100. This will be primarily open lab time, although I may assign some specific lab activities. Weekly lab attendance is required for one of the sessions; attending both lab sessions (your scheduled lab and the other lab) is optional.<br/></br> -->
+
+	<b>Instructor:</b> <a href="http://www.haifeng-xu.com/">Haifeng Xu</a><br>
+	<ul>
+		<li> Email: hx4ad AT virginia.edu </li>
+		<li> Office: Rice Hall 522 </li>
+		<li> Office hours: TBD  </li>
+
+	</ul>
+	<b>TAs:</b> 
+	<ul>
+		<li> Minbiao Han,  Email: mh2ye@ AT irginia.edu  </li>
+		<li> Jing Ma, Email:  </li>
+
+	</ul>
+
+	<!-- <b>GE-Teaching:</b> Gong (Eric) Zhang<br/>
+	Email: gzhang7 AT uoregon.edu <br/>
+	Office: Room 232, Deschutes Hall <br/>
+	Office hours: 10am - 12:30pm on Wednesdays. <br/><br/> -->
+
+	<b>Course Material:</b> There will not be any official textbook, but the slides and links to reading materials will be posted on the course schedule <i>after each lecture</i>.
+
+<br><br>
+	
+  <h3>Announcements</h3>
+	<ul>
+		<li> Aug 17: Course website is up! </li>
+	</ul>
+
+ <!-- 
+  A printable version of lecture slides will generally be available online (in our Piazza site) within a day or two after the lecture. I do not make them available before class. Often the slides will not include all the information we discuss in class, so the printed slides are not a substitute for attending and participating.<br><br>
+-->
+
+<br>
+
+  <h3>Course Description</h3>
+<p>Welcome! This is a graduate level course covering topics at the interface between machine learning and game theory. In many economic or game-theoretic applications, the problem either lacks sufficient data or is too complex. In such cases, machine learning theory helps to design more realistic or practical algorithms. Conversely, in many application of machine learning or prediction, the algorithms have to obtain data from self-interested agents whose objectives are not aligned with the algorithm designer. In those settings, the algorithms have to take into account these agents' strategic behaviors. These problems form an intriguing interplay between machine learning and game theory, and have attracted a lot of recent research attention. This course will discuss several recent research directions in this space. Our goal is to cover (some selected) basic results in the following four directions. Alone the way, we will also cover necessary basics to game theory, learning theory, mechanism design, prediction and information aggregation. 
+</p>
+
+
+<p>Topics covered in this course, and tentative syllabus: </p>
+<ul>
+	<li>First Half: Learning for Game Theory 
+	<ul>
+		<li> (week 1) Linear programming and duality</li>
+		<li> (week 2-3) Intro to game theory, zero-sum games</li>
+		<li> (week 3-4) No regret learning and its convergence to equilibrium</li>
+		<li> (week 5-6) Intro to learning theory</li>
+		<li> (week 6-7) Intro to auctions and mechanism design</li>
+		<li> (week 8-9) learning optimal auctions from samples</li>
+	</ul>
+	</li>
+
+	<li>Second Half: Game Theory for Learning
+	<ul>
+		<li> (week 10) Mechanism design for information elicitation: scoring rules and prediction markets</li>
+		<li> (week 11) Peer prediction and Bayesian truth serum </li>
+		<li> (week 12) Selling information </li>
+		<li> (week 13-14) Learning from strategic data sources </li>
+		<li> (week 15) Fairness tradeoffs in prediction </li>
+
+	</ul>
+	</li>
+ </ul> 
+
+This is primarily a theory course, and lecture-based. That said, we will focus on proofs and will not write code. Prerequisites include linear algebra, probability and algorithms. Familiarity to optimization is a plus but not necessary. Note that no background on game theory or learning theory is required.  
+
+
+<br>
+
+  <h3>Schedule and Reading Materials (will be updated after each lecture)</h3>
+	<table class="tg">
+	<tbody><tr>
+	<th>Week</th>
+	<th>Lectures</th>
+	<th>Readings</th>
+  </tr>
+
+  <tr>
+  <td>1 (Aug 27)</td>
+  <td>Introduction [Slides], Linear Programming [Slides]</td>
+  <td><a href="http://www.cs.cornell.edu/courses/cs683/2007sp/papers/oppa.pdf">Kleinberg/Leighton paper</a> </td>
+  </tr>
+
+  </tbody></table>
+
+
+<br>
+
+
+
+  <h3>Homework</h3>
+  <table class="tg">
+  <tbody><tr>
+    <th>Due date</th>
+    <th>Homework</th>
+    <th>Note</th>
+  </tr>
+
+<!--
+<tr>
+  <td>05/03</td>
+  <td><a href="https://classes.cs.uoregon.edu/19S/cis410mas/homework/Homework%201.pdf">Homework 1</a></td>
+    <td>Sample: <a href="https://classes.cs.uoregon.edu/19S/cis410mas/homework/param.csv">param.csv</a> <a href="https://classes.cs.uoregon.edu/19S/cis410mas/homework/payoff.csv">payoff.csv</a> <a href="https://classes.cs.uoregon.edu/19S/cis410mas/homework/SSE.csv">SSE.csv</a></td>
+</tr>
+
+<tr>
+  <td>05/17</td>
+  <td><a href="https://classes.cs.uoregon.edu/19S/cis410mas/homework/Homework%202.pdf">Homework 2</a></td>
+    <td>Sample: <a href="https://classes.cs.uoregon.edu/19S/cis410mas/homework/gameShapley.txt">gameShapley.txt</a> <a href="https://classes.cs.uoregon.edu/19S/cis410mas/homework/gameCS.txt">gameCS.txt</a> </td>
+</tr>
+<tr>
+  <td>05/03</td>
+  <td><a href="https://classes.cs.uoregon.edu/19S/cis410mas/homework/Homework%203.pdf">Homework 3</a></td>
+    <td>Sample: <a href="https://classes.cs.uoregon.edu/19S/cis410mas/homework/HW3/param.csv">param.csv</a> <a href="https://classes.cs.uoregon.edu/19S/cis410mas/homework/HW3/payoff.csv">payoff.csv</a> <a href="https://classes.cs.uoregon.edu/19S/cis410mas/homework/HW3/solution_grads.csv">solution_grads.csv</a> <a href="https://classes.cs.uoregon.edu/19S/cis410mas/homework/HW3/solution_undergrads.csv">solution_undergrads.csv</a></td>
+</tr>
+-->
+
+  </tbody></table>
+
+<br>
+
+
+
+	<h3>Requirements and Grading</h3>
+
+ Homework assignments will count for 70% of the grade. There will be 3-4 assignments, roughly 4 weeks apart each. The homework will be proof-based, and are intended to be very challenging. Collaboration and discussion among students is allowed, even encouraged. However, students must write up the solutions independently. The remaining 30% of the grade is allocated to a final project. Students can team up for the project and each team should consist of 2 to 4 people. The project can: (1) study a <i>research</i> problem relevant to the course (ideally, also related to your own research) and write a report about your research findings; or (2) survey a related research topic by reading papers in that area and write an overview report of the area. More detailed instructions will come later. There is no midterm or final for the course. 
+<br> <br>
+
+
+<b>Late Homework Policy </b>: Each student is allowed one late homework for at most two days from the due date. You may choose whichever homework to use this chance (or not use it). No additional late homework will be accepted.  
+
+<br>
+<br>
+
+
+	<!-- <h3>Projects</h3>
+	Some projects are more challenging than others. Use Piazza to request additional lab help hours in a week when more help is needed.
+	<table class="tg">
+	<tr>
+	<th>Due date</th>
+	<th>Project</th>
+	<th>Description</th>
+</tr>
+
+<tr>
+
+  <td>01/24</td>
+  <td><a href="./projects/project1.html">Project 1</a></td>
+    <td>Search</td>
+    </tr>
+
+    <tr><tr>
+  <td>02/18</td>
+  <td><a href="./projects/project2.html">Project 2</a></td>
+    <td>Multi-Agent Search </td>
+    </tr>
+
+    <tr><tr>
+  <td>03/11</td>
+  <td><a href="./projects/project3.html">Project 3</a></td>
+    <td>Reinforcement Learning</td>
+  </tr>
+
+    <tr><tr>
+  <td>03/18</td>
+  <td><a href="./projects/project4.html">Project 4</a></td>
+    <td>Ghostbusters (Optional) </td>
+  </tr>
+
+  </table>
+  
+  <h3>Homework</h3>
+  <table class="tg">
+  <tr>
+    <th>Due date</th>
+    <th>Homework</th>
+    <th>Description</th>
+  </tr>
+
+<tr>
+  <td>01/29</td>
+  <td><a href="./homework/Homework1.pdf">Homework 1</a></td>
+    <td>Search</td>
+</tr>
+
+<tr>
+  <td>02/16</td>
+  <td><a href="./homework/Homework2.pdf">Homework 2</a></td>
+    <td>CSPs and Games</td>
+</tr>
+
+<tr>
+  <td>03/14</td>
+  <td><a href="./homework/Homework3.pdf">Homework 3</a></td>
+    <td>MDPs and RL and Bayes Nets</td>
+</tr>
+  </table> -->
+
+<br>
+<br>
+
+<h3> Other Related Statements </h3>
+
+<h4 >Honor code (Adapted from <a href="https://honor.virginia.edu/statement">Honor Syllabus Example Statement of UVa</a>)</h4>
+<p>I trust every student in this course to fully comply with all of the provisions of the University’s Honor Code. By enrolling in this course, you have agreed to abide by and uphold the Honor System of the University of Virginia, as well as the policies specific to this course. All suspected violations will be forwarded to the Honor Committee, and you may, at my discretion, receive an immediate zero on that assignment regardless of any action taken by the Honor Committee.</p>
+
+<p>Please let me know if you have any questions regarding the course honor policy. If you believe you may have committed an Honor Offense, you may wish to file a Conscientious Retraction by calling the Honor Offices at (434) 924-7602. For your retraction to be considered valid, it must, among other things, be filed with the Honor Committee before you are aware that the act in question has come under suspicion by anyone. More information can be found at <a href="https://honor.virginia.edu/">here</a>. </p>
+
+
+
+<h4>Students with disabilities or learning needs </h4> 
+We thrive to create a learning experience that is as accessible as possible. If you anticipate any issues related to the format, materials, or requirements of this course, please meet with me outside of class so we can explore potential options. Students with disabilities may also wish to work with the Student Disability Access Center to discuss a range of options to removing barriers in this course, including official accommodations. Please visit their website for information on this process and to apply for services online: <a href="https://www.studenthealth.virginia.edu/sdac">sdac.studenthealth.virginia.edu</a>. If you have already been approved for accommodations through SDAC, please send me your accommodation letter and meet with me so we can develop an implementation plan together.
+
+<h4>Discrimination and power-based violence</h4>
+<p>The University of Virginia is dedicated to providing a safe and equitable learning environment for all students. To that end, it is vital that you know two values that I and the University hold as critically important:
+
+<ul>
+<li>
+Power-based personal violence will not be tolerated.</li>
+<li> Everyone has a responsibility to do their part to maintain a safe community on Grounds.</li>
+</ul>
+If you or someone you know has been affected by power-based personal violence, more information can be found on the UVA Sexual Violence website that describes reporting options and resources available - <a href="https://eocr.virginia.edu/">https://eocr.virginia.edu/ </a></p>
+
+As your professor and as a human, I care about you and your well-being and stand ready to provide support and resources as I can. As a faculty member, I am required by University policy and federal law to report what you tell me to the University’s Title IX Coordinator. The Title IX Coordinator’s job is to ensure that the reporting student receives the resources and support that they need, while also reviewing the information presented to determine whether further action is necessary to ensure survivor safety and the safety of the University community. If you wish to report something that you have seen, you can do so at the <a href="https://justreportit.virginia.edu/">Just Report It portal</a>. The worst possible situation would be for you or your friend to remain silent when there are so many here willing and able to help.
+
+<h4>Religious accommodations</h4>
+<p>It is the University’s long-standing policy and practice to reasonably accommodate students so that they do not experience an adverse academic consequence when sincerely held religious beliefs or observances conflict with academic requirements.</p>
+
+<p>Students who wish to request academic accommodation for a religious observance should submit their request in writing directly to me via Email as far in advance as possible. Students who have questions or concerns about academic accommodations for religious observance or religious beliefs may contact the University’s Office for Equal Opportunity and Civil Rights (EOCR) at UVAEOCR@virginia.edu or 434-924-3200.</p>
+
+<p>
+<i>Section 5.2 - 5.4 are adapted from a SEAS-wide example</i>
+</p>
+
+
+<br>
+<br>
+  <h3><a id="Acknowledgement"></a>Acknowledgement</h3>
+          <p>I would like to thank <a href="http://ix.cs.uoregon.edu/~ram/">Ramakrishnan Durairajan</a> for inspiring the design of this webpage. </p>
+
+	</div>
+	
+	
+</div></body></html>
