@@ -1,6 +1,6 @@
 var news = new Array();
 news[33] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Aug 2019 </td><td>&nbsp; I am teaching <a href="cs6501fa19/index.htm">CS 6501: Topics in Learning and Game Theory</a> this Fall</td></tr>';
-news[32] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; June 2019 </td><td>&nbsp; My thesis received <a href="http://www.sigecom.org/awards.html">ACM SIGecom Doctoral Dissertation Award</a> runner-up</td></tr>';
+news[32] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; June 2019 </td><td>&nbsp; My thesis received <a href="http://www.sigecom.org/awards.html">ACM SIGecom Doctoral Dissertation Award</a> honorable mention</td></tr>';
 news[31] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; May 2019 </td><td>&nbsp; My thesis received <a href="http://aamas2019.encs.concordia.ca/cfvl.html">IFAAMAS-18 Victor Lesser Distinguished Dissertation Award</a> runner up</td></tr>';
 news[30] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; May 2019 </td><td>&nbsp; Our demo on  <a href="files/Drone-demo-19.pdf">drone signaling for conservation</a> wins Best Demo Award at AAMAS 2019</td></tr>';
 news[29] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; May 2019 </td><td>&nbsp; Check our work (<a href="https://arxiv.org/pdf/1903.02917.pdf">ec’19</a>, <a href="files/attacker_deception.pdf">ijcai’19</a>) on analyzing equilibrium of learning against strategic agents</td></tr>';
