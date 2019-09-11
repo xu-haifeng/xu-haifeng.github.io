@@ -1,5 +1,5 @@
 var news = new Array();
-news[34] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; June 2019 </td><td>&nbsp; On the senior program committee of <a href="https://aaai.org/Conferences/AAAI-20/aaai20specialtrackcall/">AAAI Emerging Track on AI for Social Impact</a></td></tr>';
+news[34] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Aug 2019 </td><td>&nbsp; On the senior program committee of <a href="https://aaai.org/Conferences/AAAI-20/aaai20specialtrackcall/">AAAI Emerging Track on AI for Social Impact</a></td></tr>';
 news[33] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Aug 2019 </td><td>&nbsp; I am teaching <a href="cs6501fa19/index.htm">CS 6501: Topics in Learning and Game Theory</a> this Fall</td></tr>';
 news[32] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; June 2019 </td><td>&nbsp; My thesis received <a href="http://www.sigecom.org/awards.html">ACM SIGecom Doctoral Dissertation Award</a> honorable mention</td></tr>';
 news[31] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; May 2019 </td><td>&nbsp; My thesis received <a href="http://aamas2019.encs.concordia.ca/cfvl.html">IFAAMAS-18 Victor Lesser Distinguished Dissertation Award</a> runner up</td></tr>';
