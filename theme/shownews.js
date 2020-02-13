@@ -1,4 +1,5 @@
 var news = new Array();
+news[37] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Jan 2020 </td><td>&nbsp; Honored to receive the 2020 Google Faculty Award on <i>Algorithms and Optimization</i></td></tr>';
 news[36] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Jan 2020 </td><td>&nbsp; Invited <a href="https://www.cs.cmu.edu/calendar/wed-2020-02-05-1400/special-institute-software-research-seminar">seminar talk</a> and <a href="https://feifang.info/artificial-intelligence-methods-for-social-good-spring-2020/">guest lecture</a> at CMU</td></tr>';
 news[35] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Oct 2019 </td><td>&nbsp; Two papers accepted by SODA-20, two by AAAI-20 (both oral), and one by WINE-19</td></tr>';
 news[34] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Aug 2019 </td><td>&nbsp; On the senior program committee of <a href="https://aaai.org/Conferences/AAAI-20/aaai20specialtrackcall/">AAAI Emerging Track on AI for Social Impact</a></td></tr>';
@@ -37,7 +38,7 @@ news[2] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Jan 2016 </td><td>&nbsp; Three
 news[1] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Nov 2015 </td><td>&nbsp; On the program committee of <a href="http://ijcai-16.org">IJCAI 2016</a>  </td></tr>'; 
 news[0] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Sep 2015 </td><td>&nbsp; Visit the <a href="https://simons.berkeley.edu/programs/economics2015">Economic and Computation</a> Program at the Simons Institute until December </td></tr>'; 
 
-var maxnewscnt = 5;
+var maxnewscnt = 7;
 function showNews(partial) {
   len = news.length;
   if (partial == true) {
