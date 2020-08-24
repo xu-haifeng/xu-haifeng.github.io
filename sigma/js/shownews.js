@@ -1,4 +1,5 @@
 var news = new Array();
+news[15] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Aug 2020 </td><td>&nbsp; Haifeng is on Senior PC of AAAI 2021 for both main track and <a href="https://aaai.org/Conferences/AAAI-21/aaai21specialtrackcall/">special track on AI for Societal Impact</a> </td></tr>';
 news[14] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; June 2020 </td><td>&nbsp; Our work on robustness of bandit algorithms against strategic behaviors is accepted by ICML 2020 </td></tr>';
 news[13] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Feb 2020 </td><td>&nbsp; Haifeng received the 2020 Google Faculty Award (<a href="https://ai.googleblog.com/2020/02/announcing-2019-google-faculty-research.html">Google news</a>, <a href="https://engineering.virginia.edu/two-uva-computer-science-faculty-win-google-research-awards">UVA news</a>)</td></tr>';
 news[12] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Feb 2020 </td><td>&nbsp; Our joint work with Vanderbilt on signaling to deter privacy attack in medical systems is accepted by ICDE 2010</td></tr>';
