@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0045)https://classes.cs.uoregon.edu/19S/cis410mas/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CS 6501: Topics in Learning and Game Theory  | University of Virginia</title>
+
+<link href="./theme/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+<link href="./theme/style.css" rel="stylesheet" type="text/css" media="screen">
+<style>
+.hw { color: red }		
+.hw a { color: red }		
+</style>
+</head>
+<body bgcolor="#6D7B8D" align="justify">
+<div id="container">
+<div id="content">
+<h2 align="center">CS 6501: Topics in Learning and Game Theory (Spring 2021) </h2> <hr>
+
+<h3>Basic Information</h3> 
+
+<!-- In this sophomore/junior level course (which should be taken after CIS 212 but
+before most 400-level courses) you will build a web-based software system and
+become familiar with a variety of issues that arise as we move beyond building
+individual programs into building more complex systems that exist in a larger
+software ecosystem. Compared to prior offerings, there will be a few changes
+this term including, but not limited to, Dockers and Test Driven Development. -->
+
+
+	<!-- <b>Prerequisites:</b> The pre-requisitive for CIS 322 is CIS 212 or equivalent. You may take CIS 322 concurrently with CIS 314 or CIS 313. It is preferable to take CIS 322 before CIS 330 and CIS 415, although it is not a pre-requisite. Students at the 400 level may take CIS 322, but you should be aware that the course is designed primarily for students at the 300 level.<br/><br/> -->
+
+	<b>Class Location:</b> Virtual on Zoom <br>
+	<b>Class Time:</b> Tuesdays and Thursdays, 2:00 pm to 3:15pm <br>
+	<!-- <b>Lab:</b> Friday from 10:00am to 10:50am (lab 1) and 1:00pm to 1:50pm (lab 2) in Deschutes room 100. This will be primarily open lab time, although I may assign some specific lab activities. Weekly lab attendance is required for one of the sessions; attending both lab sessions (your scheduled lab and the other lab) is optional.<br/></br> -->
+
+	<b>Instructor:</b> <a href="http://www.haifeng-xu.com/">Haifeng Xu</a><br>
+	<ul>
+		<li> Email: hx4ad AT virginia.edu </li>
+	<!-- 	<li> Office: Rice Hall 522 </li>  -->
+		<li> Office hours: TBD  </li>
+
+	</ul>
+	<b>TAs:</b> 
+	<ul>
+		<li> <b>TBD</b>  </li>
+		<!--  <li> <b>Jing Ma</b>, &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp Email:  jm3mr AT virginia.edu; &nbsp&nbsp&nbsp&nbsp Office hour: Tuesdays 11 – 12 pm, Rice Hall 442</li> -->
+
+	</ul>
+
+	<!-- <b>GE-Teaching:</b> Gong (Eric) Zhang<br/>
+	Email: gzhang7 AT uoregon.edu <br/>
+	Office: Room 232, Deschutes Hall <br/>
+	Office hours: 10am - 12:30pm on Wednesdays. <br/><br/> -->
+
+	<b>Course Material:</b> There will not be any official textbook, but the slides and links to reading materials will be posted on the course schedule <i>after each lecture</i>.
+
+<br><br>
+	
+  <h3>Announcements</h3>
+	<ul>
+		<li> Nov 11: Course website is up! </li>
+	</ul>
+
+
+ <!-- 
+  A printable version of lecture slides will generally be available online (in our Piazza site) within a day or two after the lecture. I do not make them available before class. Often the slides will not include all the information we discuss in class, so the printed slides are not a substitute for attending and participating.<br><br>
+-->
+
+<br>
+
+  <h3>Course Description</h3>
+<p>Welcome! This is a graduate level course covering topics at the interface between machine learning and game theory. In many economic or game-theoretic applications, the problem either lacks sufficient data or is too complex. In such cases, machine learning theory helps to design more realistic or practical algorithms. Conversely, in many applications of machine learning or prediction, we have to obtain data from self-interested agents whose objectives are not aligned with the system designer. In those settings, the algorithms have to take into account these agents' <i>strategic behaviors</i>. These problems form an intriguing interplay between machine learning and game theory, and have attracted a lot of recent research attention. This course will discuss several recent research directions in this space. Our goal is to cover (some selected) basic results in the following two directions. En route, we will also develop necessary basics of game theory, learning theory, mechanism design, and information elicitation. 
+</p>
+
+
+<p>Topics covered in this course, and tentative syllabus: </p>
+<ul>
+	<li>First Half: Machine Learning for Game Theory 
+	<ul>
+		<li> (week 1) Linear programming and duality</li>
+		<li> (week 2-3) Intro to game theory, zero-sum games</li>
+		<li> (week 3-4) No regret learning and its convergence to equilibrium</li>
+		<li> (week 5-6) Intro to learning theory</li>
+		<li> (week 6-7) Intro to auctions and mechanism design</li>
+		<li> (week 8-9) learning optimal auctions from samples</li>
+	</ul>
+	</li>
+
+	<li>Second Half: Game Theory for Machine Learning
+	<ul>
+		<li> (week 10) Mechanism design for information elicitation: scoring rules and prediction markets</li>
+		<li> (week 11) Peer prediction and Bayesian truth serum </li>
+		<li> (week 12) Selling information </li>
+		<li> (week 13-14) Learning from strategic data sources </li>
+		<li> (week 15) Fairness tradeoffs in prediction </li>
+
+	</ul>
+	</li>
+ </ul> 
+
+This is primarily a theory course, and lecture-based. That said, we will focus on mathematical foundations with rigorous proofs but will not write code. Prerequisites include linear algebra, probability and algorithms. Familiarity to optimization is a plus but not necessary. Note that no background on game theory or learning theory is required.  
+
+
+<br>
+
+  <h3>Schedule and Reading Materials (updated after each lecture)</h3>
+	<table class="tg">
+	<tbody><tr>
+	<th>Lecture</th>
+	<th>Description and Slides</th>
+	<th>Readings</th>
+  </tr>
+
+  <tr>
+  <td>1 (Feb 2)</td>
+  <td>Introduction [<a href="slides/lec1-intro.pdf">slides</a>]</td>
+  <td><a href="http://www.cs.cornell.edu/courses/cs683/2007sp/papers/oppa.pdf">Kleinberg/Leighton paper</a> </td>
+  </tr>
+  
+  <td>2 (Feb 4)</td>
+  <td>Basics of LPs [<a href="slides/lec2-LP.pdf">slides</a>] </td>
+  <td> Chapter 2.1, 2.2, 4.3 of <a href="https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf">Convex Optimization</a>  by Boyd and Vandenberghe </td>
+  </tr>
+
+  <td>3 (Feb 9)</td>
+  <td> LP duality [<a href="slides/lec3-duality.pdf">slides</a>] </td>
+  <td> Lecture notes 5 and 6 of <a href="http://theory.stanford.edu/~trevisan/cs261/">an optimization course by Trevisan</a> </td>
+  </tr>
+
+  <td>4 (Feb 11)</td>
+  <td> Intro to Game Theory (I) [<a href="slides/lec4-gt1.pdf">slides</a>] </td>
+  <td> Section 3.1, 3.2, 3.3 of <a href="http://www.masfoundations.org/mas.pdf">an game theory book by Shoham and Leyton-Brown</a> </td>
+  </tr>
+   
+  <td>5 (Feb 16)</td>
+  <td> Intro to Game Theory (II) [<a href="slides/lec5-gt2.pdf">slides</a>]  </td>
+  <td>  <a href="https://arxiv.org/abs/1703.00573">Equilibrium analysis of GANs</a> by Arora et al. </td>
+  </tr>
+
+  <td>6 (Feb 18)</td>
+  <td> Intro to Online Learning [<a href="slides/lec6-onlineL.pdf">slides</a>] </td>
+  <td>  </td>
+  </tr>
+
+  <td>7 (Feb 23)</td>
+  <td> Multiplicative Weight [<a href="slides/lec7-mwu.pdf">slides</a>]  </td>
+  <td> <a href="https://www.cs.princeton.edu/~arora/pubs/MWsurvey.pdf">A survey paper on MWU and its applications </a> by Arora et al.  </td>
+  </tr>
+
+  <td>8 (Feb 25)</td>
+  <td> Swap Regret [<a href="slides/lec8-swapR.pdf">slides</a>]  </td>
+  <td> <a href="http://www.cs.cmu.edu/~ninamf/LGO10/lect0902.pdf">A note  by Balcan</a> on converting regret to swap regret   </td>
+  </tr>
+
+   <td>9 (Mar 2)</td>
+  <td> Multi-Armed Bandits [<a href="slides/lec9-bandits.pdf">slides</a>]</td>
+  <td> Section 2 and 3 of the <a href="https://arxiv.org/pdf/1204.5721.pdf">Book by Bubeck and Cesa-Bianch on Bandits</a> </td>
+  </tr>
+
+  <td>10 (Mar 4)</td>
+  <td> Mechanism Design Intro [<a href="slides/lec10-mechanism1.pdf">slides</a>] </td>
+  <td> Lecture 1 and 2 of a <a href="http://timroughgarden.org/f13/f13.pdf">Book by Roughgarden on Algorithmic Game Theory</a>  </td>
+  </tr>
+  
+  <td> (Mar 9)</td>
+  <td> Spring break day -- no lecture </td>
+  <td>  </td>
+  </tr>
+
+  <td>11 (Mar 11)</td>
+  <td> Optimal Auction I [<a href="slides/lec11-myerson1.pdf">slides</a>]</td>
+  <td>  </td>
+  </tr>
+
+  <td>12 (Mar 16)</td>
+  <td> Optimal Auction II [<a href="slides/lec12-myerson2.pdf">slides</a>]</td>
+  <td> Lecture 3, 4, 5 of a <a href="http://timroughgarden.org/f13/f13.pdf">Book by Roughgarden on Algorithmic Game Theory</a>  </td>
+  </tr>
+
+  <td>13 (Mar 18)</td>
+  <td>Sample Auctions [<a href="slides/lec13-sampleM.pdf">slides</a>]</td>
+  <td>   <a href="http://www.timroughgarden.org/papers/single.pdf">Revenue Maximization with a Single Sample</a> </td>
+  </tr>
+  
+  <td>14 (Mar 23)</td>
+  <td>Simple Auctions [<a href="slides/lec14-simpleM.pdf">slides</a>]</td>
+  <td>   <a href="http://www.vsyrgkanis.com/6853sp19/6_853_Lecture_12___Simple_vs__Optimal_Auctions.pdf">Notes from a similar course by Daskalakis and Syrgkanis</a> </td>
+  </tr>
+  
+  <td>15 (Mar 25)</td>
+  <td>Intro to Prediction Markets [<a href="slides/lec15-PM.pdf">slides</a>]</td>
+  <td>   </td>
+  </tr>
+ 
+  <td>16 (Mar 30)</td>
+  <td>Scoring Rules [<a href="slides/lec16-scoring.pdf">slides</a>]</td>
+  <td> <a href="https://www.bowaggoner.com/courses/2018/nets412/lectures/lect13.pdf">Notes from a similar course by Waggoner</a>  </td>
+  </tr>
+
+   <td>17 (Apr 1)</td>
+  <td>PMs and Scoring Rules [<a href="slides/lec17-PM2.pdf">slides</a>]</td>
+  <td> <a href="http://web.eecs.umich.edu/~jabernet/papers/ACV12.pdf">The original paper</a> including all presented results   </td>
+  </tr>
+   
+     <td>18 (Apr 6)</td>
+  <td>Peer Prediction [<a href="slides/lec18-PearPredict.pdf">slides</a>]</td>
+  <td>  <a href="https://science.sciencemag.org/content/306/5695/462">Bayesian Truth Serum paper</a> </td>
+  </tr>
+
+     <td>19 (Apr 8)</td>
+  <td>Bayesian Persuasion [<a href="slides/lec19-persuasion.pdf">slides</a>]</td>
+  <td>  The original <a href="https://faculty.chicagobooth.edu/emir.kamenica/documents/bayesianPersuasion.pdf">Bayesian Persuasion</a> paper </td>
+  </tr>
+
+  <td>20 (Apr 13)</td>
+  <td>Sell Information [<a href="slides/lec20-SellInfo.pdf">slides</a>] </td>
+  <td> The <a href="https://arxiv.org/pdf/1907.04397.pdf">Selling Information Through Consulting</a> paper </td>
+  </tr>
+
+  <td>(Apr 15)</td>
+  <td> Spring break day -- no lecture </td>
+  <td> </td>
+  </tr>
+
+  <td>21 (Apr 20)</td>
+  <td>Strategic Learning I [<a href="slides/lec21-strategicML.pdf">slides</a>] </td>
+  <td> <a href="https://users.cs.duke.edu/~hrzhang/papers/strategic_samples.pdf">Classification from Selected Samples</a> paper</td>
+  </tr>
+
+   <td>22 (Apr 22)</td>
+  <td>Strategic Learning II [<a href="slides/lec22-strategicML2.pdf">slides</a>] </td>
+  <td> <a href="https://users.cs.duke.edu/~hrzhang/papers/transformed_samples.pdf">Classification from Transformed Samples</a> paper </td>
+  </tr>
+
+    <td>23 (Apr 27)</td>
+  <td>Strategic Learning III [<a href="slides/lec23-strategicML3.pdf">slides</a>] </td>
+  <td> <a href="https://arxiv.org/pdf/1807.05307.pdf">How Can ML Induce Right Efforts</a> paper </td>
+  </tr>
+
+  <td>24 (Apr 29)</td>
+  <td>Tradeoffs of Fariness [<a href="slides/lec24-fair.pdf">slides</a>]</td>
+  <td> <a href="https://arxiv.org/pdf/1609.05807.pdf">Inherent Trade-Offs in the Fair Determination</a> </td>
+  </tr>
+
+  <td>25 (May 4)</td>
+  <td>Project Presentation</td>
+  <td> <a href="hw/schedules-grading.pdf">Presentation Schedule and the Scoring Sheet</a> </td>
+  </tr>
+
+  <td>26 (May 6)</td>
+  <td>Project Presentation</td>
+  <td> <a href="hw/schedules-grading.pdf">Presentation Schedule and the Scoring Sheet</a> </td>
+  </tr>
+
+
+
+  </tbody></table>
+
+
+<br>
+
+ <!-- 
+
+  <h3>Homework</h3>
+  <table class="tg">
+  <tbody><tr>
+    <th>Due date</th>
+    <th>Homework</th>
+    <th>Note</th>
+  </tr>
+
+<tr>
+  <td>11/05</td>
+  <td><a href="hw/hw3.pdf">Homework 3</a></td>
+    <td> </td>
+</tr>
+
+
+<tr>
+  <td>10/22</td>
+  <td><a href="hw/hw2.pdf">Homework 2</a></td>
+    <td> </td>
+</tr>
+
+<tr>
+  <td>09/19</td>
+  <td><a href="hw/hw1.pdf">Homework 1</a></td>
+    <td> Here is a <a href="hw/hw-template.zip">HW solution template</a> in case you need one</td>
+</tr>
+
+--> 
+
+ 
+  </tbody></table>
+
+<br>
+
+
+
+	<h3>Requirements and Grading</h3>
+
+<p>Homework assignments will count for 60% of the grade. There will be 3-4 assignments, roughly 4 weeks apart each. The homework will be proof-based, and are intended to be very challenging. Collaboration and discussion among students is allowed, even encouraged. However, students must write up the solutions independently.</p> 
+
+<p>The remaining 40% of the grade is allocated to a final project. Students can team up for the project and each team should consist of 2 to 4 people. The project can:  (1) study a <i>research</i> problem relevant to the course (ideally, also related to your own research) and write a report about your research findings; or (2) survey a related research topic by reading papers in that area, get a deep understanding of the area and then write an overview report. More detailed instructions will come later. There is no midterm or final for the course. </p>
+
+
+<p><b>Late Homework Policy </b>: Each student is allowed one late homework for at most two days from the due date. You may choose whichever homework to use this chance (or not use it). No additional late homework will be accepted. </p>
+
+<br>
+
+
+
+	<h3>Some Related Courses</h3>
+
+	<ul>
+		<li>  Constantinos Daskalakis and Vasilis Syrgkanis: <a href="http://www.vsyrgkanis.com/6853sp19/">Algorithmic Game Theory and Data Science</a>, MIT, Spring 2019</li>
+		<li>  Ilias Diakonikolas and Shaddin Dughmi: <a href="https://viterbi-web.usc.edu/~shaddin/cs699fa17/index.html">Topics in Learning and Game Theory</a>, USC, Fall 2017 </li>
+		<li>  Yiling Chen: <a href="https://canvas.harvard.edu/courses/9622">Prediction, Learning and Games</a>, Harvard, Spring 2016 </li>
+		<li>   Michael Kearns and Aaron Roth: <a href="http://www.cis.upenn.edu/~aaroth/courses/noregrets.html">No Regrets in Game Theory and Machine Learning
+</a>, UPenn, Spring 2013 </li>
+		<li>   Maria Florina Balcan: <a href="http://www.cs.cmu.edu/~ninamf/LGO10/">Learning, Game Theory, and Optimization
+</a>, CMU, Fall 2010 </li>
+
+		<li>   Robert Kleinberg: <a href="http://www.cs.cornell.edu/courses/cs683/2007sp/">Learning, Games, and Electronic Markets</a>, Cornell, Spring 2007 </li>
+
+	</ul>
+
+<br>
+<br>
+
+
+	<!-- <h3>Projects</h3>
+	Some projects are more challenging than others. Use Piazza to request additional lab help hours in a week when more help is needed.
+	<table class="tg">
+	<tr>
+	<th>Due date</th>
+	<th>Project</th>
+	<th>Description</th>
+</tr>
+
+<tr>
+
+  <td>01/24</td>
+  <td><a href="./projects/project1.html">Project 1</a></td>
+    <td>Search</td>
+    </tr>
+
+    <tr><tr>
+  <td>02/18</td>
+  <td><a href="./projects/project2.html">Project 2</a></td>
+    <td>Multi-Agent Search </td>
+    </tr>
+
+    <tr><tr>
+  <td>03/11</td>
+  <td><a href="./projects/project3.html">Project 3</a></td>
+    <td>Reinforcement Learning</td>
+  </tr>
+
+    <tr><tr>
+  <td>03/18</td>
+  <td><a href="./projects/project4.html">Project 4</a></td>
+    <td>Ghostbusters (Optional) </td>
+  </tr>
+
+  </table>
+  
+  <h3>Homework</h3>
+  <table class="tg">
+  <tr>
+    <th>Due date</th>
+    <th>Homework</th>
+    <th>Description</th>
+  </tr>
+
+<tr>
+  <td>01/29</td>
+  <td><a href="./homework/Homework1.pdf">Homework 1</a></td>
+    <td>Search</td>
+</tr>
+
+<tr>
+  <td>02/16</td>
+  <td><a href="./homework/Homework2.pdf">Homework 2</a></td>
+    <td>CSPs and Games</td>
+</tr>
+
+<tr>
+  <td>03/14</td>
+  <td><a href="./homework/Homework3.pdf">Homework 3</a></td>
+    <td>MDPs and RL and Bayes Nets</td>
+</tr>
+  </table> -->
+
+<br>
+<br>
+
+<h3> Other Related Statements </h3>
+
+<h4 >Honor code (Adapted from <a href="https://honor.virginia.edu/statement">Honor Syllabus Example Statement of UVa</a>)</h4>
+<p>I trust every student in this course to fully comply with all of the provisions of the University’s Honor Code. By enrolling in this course, you have agreed to abide by and uphold the Honor System of the University of Virginia, as well as the policies specific to this course. All suspected violations will be forwarded to the Honor Committee, and you may, at my discretion, receive an immediate zero on that assignment regardless of any action taken by the Honor Committee.</p>
+
+<p>Please let me know if you have any questions regarding the course honor policy. If you believe you may have committed an Honor Offense, you may wish to file a Conscientious Retraction by calling the Honor Offices at (434) 924-7602. For your retraction to be considered valid, it must, among other things, be filed with the Honor Committee before you are aware that the act in question has come under suspicion by anyone. More information can be found at <a href="https://honor.virginia.edu/">here</a>. </p>
+
+
+
+<h4>Students with disabilities or learning needs </h4> 
+We thrive to create a learning experience that is as accessible as possible. If you anticipate any issues related to the format, materials, or requirements of this course, please meet with me outside of class so we can explore potential options. Students with disabilities may also wish to work with the Student Disability Access Center to discuss a range of options to removing barriers in this course, including official accommodations. Please visit their website for information on this process and to apply for services online: <a href="https://www.studenthealth.virginia.edu/sdac">sdac.studenthealth.virginia.edu</a>. If you have already been approved for accommodations through SDAC, please send me your accommodation letter and meet with me so we can develop an implementation plan together.
+
+<h4>Discrimination and power-based violence</h4>
+<p>The University of Virginia is dedicated to providing a safe and equitable learning environment for all students. To that end, it is vital that you know two values that I and the University hold as critically important:
+
+<ul>
+<li>
+Power-based personal violence will not be tolerated.</li>
+<li> Everyone has a responsibility to do their part to maintain a safe community on Grounds.</li>
+</ul>
+If you or someone you know has been affected by power-based personal violence, more information can be found on the UVA Sexual Violence website that describes reporting options and resources available - <a href="https://eocr.virginia.edu/">https://eocr.virginia.edu/ </a></p>
+
+As your professor and as a human, I care about you and your well-being and stand ready to provide support and resources as I can. As a faculty member, I am required by University policy and federal law to report what you tell me to the University’s Title IX Coordinator. The Title IX Coordinator’s job is to ensure that the reporting student receives the resources and support that they need, while also reviewing the information presented to determine whether further action is necessary to ensure survivor safety and the safety of the University community. If you wish to report something that you have seen, you can do so at the <a href="https://justreportit.virginia.edu/">Just Report It portal</a>. The worst possible situation would be for you or your friend to remain silent when there are so many here willing and able to help.
+
+<h4>Religious accommodations</h4>
+<p>It is the University’s long-standing policy and practice to reasonably accommodate students so that they do not experience an adverse academic consequence when sincerely held religious beliefs or observances conflict with academic requirements.</p>
+
+<p>Students who wish to request academic accommodation for a religious observance should submit their request in writing directly to me via Email as far in advance as possible. Students who have questions or concerns about academic accommodations for religious observance or religious beliefs may contact the University’s Office for Equal Opportunity and Civil Rights (EOCR) at UVAEOCR@virginia.edu or 434-924-3200.</p>
+
+<p>
+<i>Section 5.2 - 5.4 are adapted from a SEAS-wide example</i>
+</p>
+
+
+<br>
+<br>
+  <h3><a id="Acknowledgement"></a>Acknowledgement</h3>
+          <p>I would like to thank <a href="http://ix.cs.uoregon.edu/~ram/">Ramakrishnan Durairajan</a> for inspiring the design of this webpage. </p>
+
+	</div>
+	
+	
+</div></body></html>
