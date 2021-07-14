@@ -1,4 +1,6 @@
 var news = new Array();
+news[19] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; July 2021 </td><td>&nbsp;  Talk on mechanism design for selling information at  <a href="http://www.gtcenter.org/?page=Workshop_WSCL.html">Strategic Communication and Learning Workshop</a>  </td></tr>';
+news[18] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; July 2021 </td><td>&nbsp;  Tutorial on learning and game theory at <a href="https://www.cs.cityu.edu.hk/~gtsc/key-and-t.html#/">Summer School on Game Theory</a> </td></tr>';
 news[17] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; April 2021 </td><td>&nbsp;  We have three <a href="https://ec21.sigecom.org/">EC</a> and two <a href="https://icml.cc/">ICML</a> papers accepted. Congrats to Shuze, Quinn and Fan for their first publication </td></tr>';
 news[16] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Dec 2020 </td><td>&nbsp; Chenghan is recognized by <a href="https://cra.org/about/awards/outstanding-undergraduate-researcher-award/">CRA Outstanding Undergrad Researcher award</a> for her work on information design</td></tr>';
 news[15] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Aug 2020 </td><td>&nbsp; Haifeng is on Senior PC of AAAI 2021 and IJCAI 2021 </td></tr>';
