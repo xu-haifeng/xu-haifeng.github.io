@@ -1,6 +1,6 @@
 var news = new Array();
 news[23] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Feb 2022 </td><td>&nbsp; I am serving as a PC co-chair for <a href="https://gamesec-conf.org/index.php">GameSec 2022: Game Theory for Security</a> conference; Please consider submit!</td></tr>';
-news[22] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Feb 2022 </td><td>&nbsp; Five papers accepted to <a href="https://aaai.org/Conferences/AAAI-22/">AAAI 2012</a> (accept rate 15%), with three oral presentations </td></tr>';
+news[22] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Feb 2022 </td><td>&nbsp; Five papers accepted to <a href="https://aaai.org/Conferences/AAAI-22/">AAAI 2012</a> (acceptance rate 15%), with three oral presentations </td></tr>';
 news[21] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Sep 2021 </td><td>&nbsp; Three papers accepted to <a href="https://nips.cc/Conferences/2021">NeurIPS</a>; congrats to Minbiao and Jibang for their first publication in our group </td></tr>';
 news[20] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Aug 2021 </td><td>&nbsp;  Grateful to NSF for supporting <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2132506&HistoricalAwards=false">our project on algorithmic information design</a>  </td></tr>';
 news[19] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; July 2021 </td><td>&nbsp;  Talk on mechanism design for selling information at  <a href="http://www.gtcenter.org/?page=Workshop_WSCL.html">Strategic Communication and Learning Workshop</a>  </td></tr>';
