@@ -1,4 +1,6 @@
 var news = new Array();
+news[26] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; May 2022 </td><td>&nbsp; Check out our new EC-22 paper on <a href="https://arxiv.org/pdf/2202.10678.pdf">Markov Persuasion Process and its Reinforcement Learning</a>!</td></tr>';
+news[25] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; May 2022 </td><td>&nbsp; We have three papers accepted to EC-22; Congrats to our undergrad RA Chenghan for her first-author EC paper!</td></tr>';
 news[24] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Feb 2022 </td><td>&nbsp; I am a technical program co-chair for <a href="https://www.gamesec-conf.org/">GameSec 2022: Game Theory for Security</a> conference; Please consider submiting!</td></tr>';
 news[23] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Feb 2022 </td><td>&nbsp; Five papers accepted to <a href="https://aaai.org/Conferences/AAAI-22/">AAAI 2022</a> (acceptance rate 15%), with three oral presentations </td></tr>';
 news[22] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Dec 2021 </td><td>&nbsp; With <a href="https://web.iem.technion.ac.il/site/academicstaff/yakov-babichenko/">Yakov</a> and <a href="https://faculty.chicagobooth.edu/ozan-candogan">Ozan</a>, we give an invited <a href="https://www.tele-task.de/lecture/video/8954/">tutorial on information design</a> at WINE 2021 </td></tr>';
