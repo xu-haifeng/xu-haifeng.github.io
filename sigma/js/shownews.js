@@ -1,4 +1,5 @@
 var news = new Array();
+news[27] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; May 2022 </td><td>&nbsp; Our group has 3 EC, 3 ICML, 1 COLT, 1 UAI paper accepted in May!</td></tr>';
 news[26] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; May 2022 </td><td>&nbsp; Check out our new EC-22 paper on <a href="https://arxiv.org/pdf/2202.10678.pdf">Markov Persuasion Process and its Reinforcement Learning</a>!</td></tr>';
 news[25] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; May 2022 </td><td>&nbsp; We have three papers accepted to EC-22; Congrats to our undergrad RA Chenghan for her first-author EC paper!</td></tr>';
 news[24] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Feb 2022 </td><td>&nbsp; I am a technical program co-chair for <a href="https://www.gamesec-conf.org/">GameSec 2022: Game Theory for Security</a> conference; Please consider submiting!</td></tr>';
