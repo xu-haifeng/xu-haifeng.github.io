@@ -11,7 +11,7 @@ Nivo Slider v2.7.1 by Gilbert Pellegrom - http://nivo.dev7studios.com/
 /* HTML elements */
 body{background-color:#f2f2f2;color:#000;font-family:'Droid Sans',Tahoma,Arial,sans-serif;font-size:15px;line-height:1.65em;}
 a{color:#003193;text-decoration:none;}
-a:hover{color:#800000FF;text-decoration:none;}
+a:hover{color:#FF663D;text-decoration:none;}
 a img{border:none;}
 h1,h2{clear:left;color:#5c5a5a;font-weight:400;margin:0.7em 0;font-family:'Chalkduster';}
 h3,h4{border:0;color:#00004c;font-weight:400;margin:0 0 0 0;padding:1;font-family:'Arial';}
@@ -62,7 +62,7 @@ table.uva-table td{
 #wrapperfluid{background-color:#fff;margin:35px auto;max-width:960px;}
 
 /* Layout IDs */
-#header{position:relative; background:#155F83FF;height:70px;}
+#header{position:relative; background:#002E6C;height:70px;}
 #sitetitle{float:left;padding:30px 30px 10px 40px;}
 #sitetitle h1 {font-size:35px;margin:0;padding:0;}
 #sitetitle h1 a{color:#FFFFFF;}
@@ -80,8 +80,8 @@ table.uva-table td{
 
 /* Main navigation menu */
 
-#nav ul{background:#155F83FFFF;list-style:none;float:right;height:70px; overflow: hidden}
-#nav ul li{background:#155F83FF;display:inline-block;font-family:'Gill Sans',Verdana,Tahoma,sans-serif;text-align:center;padding: 10px 0px 0px 0px;}
+#nav ul{background:#002E6C;list-style:none;float:right;height:70px; overflow: hidden}
+#nav ul li{background:#002E6C;display:inline-block;font-family:'Gill Sans',Verdana,Tahoma,sans-serif;text-align:center;padding: 10px 0px 0px 0px;}
 #nav ul li a{display:block;font-size:14px;padding:23px 30px 10px 10px;text-transform:uppercase;color:#FFFFFF;letter-spacing:1px}
 #nav ul li:hover a{color:#FF663D;-webkit-text-stroke-width:1.2px}
 #nav ul li.current a{color:#FF663D;-webkit-text-stroke-width:1.2px}
