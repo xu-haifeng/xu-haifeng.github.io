@@ -1,5 +1,5 @@
 var news = new Array();
-news[29] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Sep 2022 </td><td>&nbsp; Invited talk at <a href="https://simons.berkeley.edu/workshops/schedule/16928">Simons Workshop on Quantifying Uncertainty</a></td></tr>';
+news[29] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Sep 2022 </td><td>&nbsp; Invited talk on Markov Persuasion Process at <a href="https://simons.berkeley.edu/workshops/schedule/16928">Simons Workshop on Quantifying Uncertainty</a></td></tr>';
 news[28] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; June 2022 </td><td>&nbsp; Invited talk at the <a href="https://www.imsi.institute/activities/data-value-assessment-and-evolution/">Data Value Workshop</a> organized by IMSI</td></tr>';
 news[27] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; May 2022 </td><td>&nbsp; Our group has 3 EC, 3 ICML, 1 COLT, 1 UAI paper accepted in May!</td></tr>';
 news[26] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; May 2022 </td><td>&nbsp; Check out our new EC-22 paper on <a href="https://arxiv.org/pdf/2202.10678.pdf">Markov Persuasion Process and its Reinforcement Learning</a>!</td></tr>';
