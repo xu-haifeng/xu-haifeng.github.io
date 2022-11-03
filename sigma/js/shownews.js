@@ -1,4 +1,5 @@
 var news = new Array();
+news[32] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Nov 2022 </td><td>&nbsp; Check  out the <a href="https://www.ideal.northwestern.edu/events/data-economics-workshop/"> workshop on challenges in data economics</a> organized by <a href="https://www.anniehliang.com/">Annie Liang</a>, <a href="https://ai.stanford.edu/~nlambert/">Nicolas Lambert</a> and I!</td></tr>';
 news[31] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Oct 2022 </td><td>&nbsp; <a href="https://www.james-zou.com/">James</a>, <a href="https://www.shuranzheng.com/">Shuran</a> and I will give a joint tutorial on <em>The Economics of Data and Learning</em> at AAAI 2023; Stay tuned!</td></tr>';
 news[30] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Sep 2022 </td><td>&nbsp; Haifeng will teach <a href="http://www.haifeng-xu.com/cmsc35401fa22/index.htm">The Interplay of Learning and Game Theory</a> this autumn</td></tr>';
 news[29] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Sep 2022 </td><td>&nbsp; Co-organize an <a href="https://www.ideal.northwestern.edu/special-quarters/fall-2022/">IDEAL Special Quarter on Data Economics</a>; Please let me know if you wanna participate! </td></tr>';
