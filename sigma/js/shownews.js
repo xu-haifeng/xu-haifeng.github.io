@@ -1,4 +1,5 @@
 var news = new Array();
+news[37] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; June 2023 </td><td>&nbsp; Invited talk at Google ML Research Seminar on <a href="files/EconRS_google_xu.pdf" target="_blank">the Dynamics and Economy of Recommender Systems</a></td></tr>';
 news[36] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; June 2023 </td><td>&nbsp; Check out our EC23 tutorial on <a href="https://zabarnyi.cswp.cs.technion.ac.il/ec-2023-tutorial-information-design-algorithmic-fundamentals-and-new-frontiers/" target="_blank">Algorithmic Fundamentals and New Frontiers of Information Design</a></td></tr>';
 news[35] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; May 2023 </td><td>&nbsp; Haifeng is selected for the <a href="https://ijcai-23.org/early-career-track/" target="_blank">IJCAI 2023 Early Career Spotlights</a></td></tr>';
 news[34] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; April 2023 </td><td>&nbsp; Check out our <a href="https://www.ideal-institute.org/2023/04/05/ideal-high-school-teacher-workshop/" target="_blank">High School Teacher Workshop</a> that introduces AI basics for high-school teachers</td></tr>';
