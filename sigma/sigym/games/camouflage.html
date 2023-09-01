@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>Security Game &#8212; SIGym 0.1 documentation</title>
+    <title>Camouflage Game &#8212; SIGym 0.1 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
@@ -30,11 +30,15 @@
 
           <div class="body" role="main">
             
-  <section id="security-game">
-<h1>Security Game<a class="headerlink" href="#security-game" title="Permalink to this heading">¶</a></h1>
-<a class="reference internal image-reference" href="../_static/videos/security.gif"><img alt="game" class="align-center" src="../_static/videos/security.gif" style="width: 300px;" /></a>
-<p>This environment is designed to testing any leader's (the protector) learning strategy in an unknown general-form security games, with unknown leader rewards and an unknown follower. At each round, the leader selects a certain number of targets to protect, followed by the follower’s response action j (column) determined by certain follower behavior mode. The leader/user then observes realized (possibly noisy) reward for action profile, which reflects if the follower has successfully launched an attack on an unprotected target.</p>
-<!--p>The current average regret records the difference between optimal leader utility in the ideal situation with complete knowledge of follower and the actual utility obtained by the leader so far.</p-->
+  <section id="stackelberg-game">
+<h1>Camouflage Game<a class="headerlink" href="#Camouflage-game" title="Permalink to this heading">¶</a></h1>
+<a class="reference internal image-reference" href="../_static/videos/camouflage.gif"><img alt="game" class="align-center" src="../_static/videos/camouflage.gif" style="width: 600px;" /></a>
+<p>This environment is designed to test any leader’s strategy against the follower under a camouflage game, where the leader’s goal is to maximize reward by successfully bringing valuable platforms to the finish line without being detected by the attacker. Each time a ship attempts to move past a sensor, the follower may activate the sensor and capture the ship at their discretion. However, once a sensor is activated, it falls into a cooldown period of 2 rounds, in which the leader may move any 2 ships past it risk-free.  
+</p>
+<p>
+The demo above simulates a game with 7 platforms and 5 sensors deployed by the follower. Valuable platforms are displayed as cargo ships while unimportant ones as boats. 2 types of sensor are available for this game. Here the demo presents a naive attacker strategy, where red sensors will always detect platform #1, #3, #5, and #7, and purple sensors will always detect platform #2, #4, and #6. Notice how ship #1 is immediately captured by the first sensor, and how ship #2 and #3 move past the first sensor while it’s in cooldown. In this particular game, the leader chooses to prioritize the safety of ship #7, the most valuable one, over all other ships. All other platforms end up getting captured by the follower, and thus the total reward under this strategy is 1.0 from the value of platform #7 alone.
+</p>
+
 
 </section>
 
@@ -58,9 +62,9 @@
 
 <h4 class="caption" role="heading"><span class="caption-text">GAMES</span></h4>
 <ul>
-<li class="toctree-l1" ><a class="reference internal" style="color:#135375;" href="stackelberg.html">Stackleberg Game</a></li>
-<li class="toctree-l1" ><a class="reference internal" style="color:#135375;"><b>Security Game</b></a></li>
-<li class="toctree-l1" ><a class="reference internal" style="color:#135375;" href="camouflage.html">Camouflage Game</a></li>
+<li class="toctree-l1" ><a class="reference internal" style="color:#135375;" href="stackelberg.html">Stackelberg Game</a></li>
+<li class="toctree-l1" ><a class="reference internal" style="color:#135375;" href="security.html">Security Game</a></li>
+<li class="toctree-l1" ><a class="reference internal" style="color:#135375;" ><b>Camouflage Game</b></a></li>
 </ul>
 <h4 class="caption" role="heading"><span class="caption-text">API</span></h4>
 <ul>
