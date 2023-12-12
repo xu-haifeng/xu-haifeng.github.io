@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0045)https://classes.cs.uoregon.edu/19S/cis410mas/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CS 6501: Topics in Learning and Game Theory  | University of Virginia</title>
+
+<link href="./theme/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+<link href="./theme/style.css" rel="stylesheet" type="text/css" media="screen">
+<style>
+.hw { color: red }		
+.hw a { color: red }		
+</style>
+</head>
+<body bgcolor="#6D7B8D" align="justify">
+<div id="container">
+<div id="content">
+<h2 align="center">CMSC 35401: Topics in Machine Learning <div style="line-height:20%;"><br></div>  The Interplay of Learning and Game Theory (Winter 2024) </h2> <hr>
+
+<h3>Basic Information</h3> 
+
+ 
+
+
+	<!-- <b>Prerequisites:</b> The pre-requisitive for CIS 322 is CIS 212 or equivalent. You may take CIS 322 concurrently with CIS 314 or CIS 313. It is preferable to take CIS 322 before CIS 330 and CIS 415, although it is not a pre-requisite. Students at the 400 level may take CIS 322, but you should be aware that the course is designed primarily for students at the 300 level.<br/><br/> -->
+
+	<b>Class Location:</b>  TBD <br>
+	<b>Class Time:</b> TThursdays, 2:00pm to 4:50pm, with 15 mins middle break <br>
+
+	<b>Instructor:</b> <a href="http://www.haifeng-xu.com/">Haifeng Xu</a><br>
+	<ul>
+		<li> Email: haifengxu AT uchicago.edu </li>
+		<li> Office: Crerar 260 </li>
+		<li> Office hours: Thursday 4:50 - 5:50 pm (rightly after class)  </li>
+
+	</ul>
+	<b>TA: Minbiao Han</b> <br/>
+	<ul>
+	 <li> Email: TBD </li>
+	 <li> Office Hours: TBD;    Room: TBD </li>  
+	</ul>
+
+	<!-- <b>GE-Teaching:</b> Gong (Eric) Zhang<br/>
+	Email: gzhang7 AT uoregon.edu <br/>
+	Office: Room 232, Deschutes Hall <br/>
+	Office hours: 10am - 12:30pm on Wednesdays. <br/><br/> -->
+
+	<b>Course Material:</b> There will not be any official textbook, but the slides and links to reading materials will be posted on the course schedule <i>after each lecture</i>.
+
+<br><br>
+	
+  <h3>Announcements</h3>
+	<ul>
+		<li> Dec 12: Course website is up! </li>
+ <!--		<li> Oct 1: First HW is out; due 10/18. </li>
+		<li> Oct 20: Second HW is out; due Nov 3rd. </li>
+		<li> Oct 23: <a href="hw/project-instruction.pdf">Projection instruction</a> is out; proposal is due also on Nov 3rd. </li>
+		<li> Nov 17: Third HW is out; due Dec 6. </li> 
+		<li> Dec 1: here is the <a href="hw/grade-sheet.pdf">peer grading sheet</a> for project presentations. </li> 
+	</ul>
+
+ 
+  A printable version of lecture slides will generally be available online (in our Piazza site) within a day or two after the lecture. I do not make them available before class. Often the slides will not include all the information we discuss in class, so the printed slides are not a substitute for attending and participating.<br><br>
+-->
+
+<br>
+
+  <h3>Course Description</h3>
+<p>Welcome! This is a graduate level course covering topics at the interface between machine learning and game theory. In many economic or game-theoretic applications, the problem either lacks sufficient data or is too complex. In such cases, machine learning theory helps to design more realistic or practical algorithms. Conversely, in many application of machine learning or prediction, the algorithms have to obtain data from self-interested agents whose objectives are not aligned with the algorithm designer. In those settings, the algorithms have to take into account these agents' strategic behaviors. These problems form an intriguing interplay between machine learning and game theory, and have attracted a lot of recent research attention. This course will discuss several recent research directions in this space. Our goal is to cover (some selected) basic results in the following four directions. Alone the way, we will also cover necessary basics to game theory, learning theory, mechanism design, prediction and information aggregation. 
+</p>
+
+
+<p>Topics covered in this course, and tentative syllabus: </p>
+<ul>
+	<li>First Half: Learning for Game Theory 
+	<ul>
+		<li> (week 1) Linear programming and duality</li>
+		<li> (week 2-3) Intro to game theory, zero-sum games</li>
+		<li> (week 3-4) No regret learning and its convergence to equilibrium</li>
+		<li> (week 5) Bandit algorithms </li>
+	</ul>
+	</li>
+
+	<li>Second Half: Game Theory for Learning
+	<ul>
+		<li> (week 5-6) Mechanisms for eliciting information: scoring rules and prediction markets</li>
+		<li> (week 7) Bayesian persuasion, and pricing of information </li>
+		<li> (week 8-9) Learning from strategic data sources </li>
+		<li> (week 9) Fairness tradeoffs in prediction </li>
+
+	</ul>
+	</li>
+ </ul> 
+
+This is primarily a theory course, and lecture-based. That said, we will focus on proofs and will not write code. Prerequisites include linear algebra, probability and algorithms. Familiarity to optimization is a plus but not necessary. Note that no background on game theory or learning theory is required.  
+
+
+<br>
+
+  <h3>Tentative Schedule and Readings (SLIGHT CHANGES MAY BE MADE BEFORE COURSE STARTS)</h3>
+	<table class="tg">
+	<tbody>
+<tr>
+	<th>Week</th>
+	<th>Lectures</th>
+	<th>Readings</th>
+  </tr>
+
+<tr>
+  <td>1 (Jan 4: I)</td>
+  <td>Introduction [<a href="slides/lec1-intro.pdf">slides</a>] </td>
+  <td><a href="http://www.cs.cornell.edu/courses/cs683/2007sp/papers/oppa.pdf">Kleinberg/Leighton paper</a> </td>
+  </tr>
+  
+  <td>2 (Jan 4: II)</td>
+  <td>Basics of LPs [<a href="slides/lec2-LP.pdf">slides</a>] </td>
+  <td> Chapter 2.1, 2.2, 4.3 of <a href="https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf">Convex Optimization</a>  by Boyd and Vandenberghe </td>
+  </tr>
+
+  <td>3 (Jan 11: I)</td>
+  <td> LP duality   [<a href="slides/lec3-duality.pdf">slides</a>] </td>
+  <td> Lecture notes 5 and 6 of <a href="http://theory.stanford.edu/~trevisan/cs261/">an optimization course by Trevisan</a> </td>
+  </tr>
+
+  <td>4 (Jan 11: II)</td>
+  <td> Intro to Game Theory (I) [<a href="slides/lec4-gt1.pdf">slides</a>]  </td>
+  <td> Section 3.1, 3.2, 3.3 of <a href="http://www.masfoundations.org/mas.pdf">an game theory book by Shoham and Leyton-Brown</a> </td>
+  </tr>
+   
+  <td>5 (Jan 18: I)</td>
+  <td> Intro to Game Theory (II)  [<a href="slides/lec5-gt2.pdf">slides</a>] </td>
+  <td>  <a href="https://arxiv.org/abs/1703.00573">Equilibrium analysis of GANs</a> by Arora et al. </td>
+  </tr>
+
+  <td>6 (Jan 18: II)</td>
+  <td> Intro to Online Learning [<a href="slides/lec6-onlineL.pdf">slides</a>]  </td>
+  <td>  </td>
+  </tr>
+
+  <td>7 (Jan 25: I)</td>
+  <td> Multiplicative Weight  [<a href="slides/lec7-mwu.pdf">slides</a>]   </td>
+  <td> <a href="https://www.cs.princeton.edu/~arora/pubs/MWsurvey.pdf">A survey paper on MWU and its applications </a> by Arora et al.  </td>
+  </tr>
+
+  <td>8 (Jan 25: II)</td>
+  <td> Swap Regret  [<a href="slides/lec8-swapR.pdf">slides</a>] </td>
+  <td> <a href="http://www.cs.cmu.edu/~ninamf/LGO10/lect0902.pdf">A note  by Balcan</a> on converting regret to swap regret   </td>
+  </tr>
+
+   <td>9 (Feb 1: I)</td>
+  <td> Multi-Armed Bandits [<a href="slides/lec9-bandits.pdf">slides</a>] </td>
+  <td> Section 2 and 3 of the <a href="https://arxiv.org/pdf/1204.5721.pdf">Book by Bubeck and Cesa-Bianch on Bandits</a> </td>
+  </tr>
+  
+
+  <td>10 (Feb 1: II)</td>
+  <td>Prediction Markets (PMs) [<a href="slides/lec10-PM.pdf">slides</a>] </td>
+  <td> <a href="https://www.bowaggoner.com/courses/2018/nets412/lectures/lect13.pdf">Notes from a similar course by Waggoner</a>  </td>
+  </tr>
+
+   <td>11 (Feb 8: I)</td>
+  <td>PMs and Scoring Rules [<a href="slides/lec11-scoring.pdf">slides</a>] </td>
+  <td> <a href="http://web.eecs.umich.edu/~jabernet/papers/ACV12.pdf">The original paper</a> including all presented results   </td>
+  </tr>
+   
+     <td>12 (Feb 8: II)</td>
+  <td>Peer Prediction [<a href="slides/lec12-PeerPredict.pdf">slides</a>] </td>
+  <td>  <a href="https://science.sciencemag.org/content/306/5695/462">Bayesian Truth Serum paper</a> </td>
+  </tr>
+
+     <td>13 (Feb 15: I)</td>
+  <td>Bayesian Persuasion [<a href="slides/lec13-persuasion.pdf">slides</a>] </td>
+  <td>  The original <a href="https://www.aeaweb.org/articles?id=10.1257/aer.101.6.2590">Bayesian Persuasion</a> paper </td>
+  </tr>
+
+  <td>14 (Feb 15: II)</td>
+  <td>Pricing of Information [<a href="slides/lec14-InfoSell.pdf">slides</a>] </td>
+  <td> The <a href="https://arxiv.org/pdf/2102.13289.pdf">Optimal Pricing of Information</a> paper </td>
+  </tr>
+
+  <td>15 (Feb 22: I)</td>
+  <td>Strategic Learning I  [<a href="slides/lec15-strategicML1.pdf">slides</a>]</td>
+  <td> <a href="https://arxiv.org/pdf/2012.03310.pdf">PAC-learning for Strategic Classification</a> paper</td>
+  </tr>
+
+
+   <td> 16 (Feb 22: II)</td>
+  <td>Strategic Learning II [<a href="slides/lec16-strategicML2.pdf">slides</a>] </td>
+  <td> <a href="https://arxiv.org/pdf/1807.05307.pdf">How Can ML Induce Right Efforts</a>  paper </td>
+  </tr>
+
+
+  <td>17 (Feb 29: I)</td>
+  <td>Tradeoffs of Fairness [<a href="slides/lec17-fairness.pdf">slides</a>] </td>
+  <td> <a href="https://arxiv.org/pdf/1609.05807.pdf">Inherent Trade-Offs in the Fair Determination</a> </td>
+  </tr>
+
+  <td>(Feb 29: II)</td>
+  <td>  Project presentations [<a href="hw/grade-sheet.pdf">schedule</a>] </td>
+  <td>   </td>
+  </tr>
+
+
+
+
+  </tbody></table>
+
+
+<br>
+
+
+
+  <h3>Homework</h3>
+  <table class="tg">
+  <tbody><tr>
+    <th>Due date</th>
+    <th>Homework</th>
+    <th>Note</th>
+  </tr>
+
+
+
+<!-- 
+<tr>
+  <td>10/18</td>
+  <td><a href="hw/hw1.pdf">Homework 1</a></td>
+    <td> Here is a <a href="hw/hw-template.zip">HW solution template</a> in case you need one</td>
+</tr>
+
+<tr>
+  <td>11/03</td>
+  <td><a href="hw/hw2.pdf">Homework 2</a></td>
+    <td> Good luck! </td>
+</tr>
+
+<tr>
+  <td>proposal due 11/03</td>
+  <td><a href="hw/project-instruction.pdf">Projection Instructions</a></td>
+    <td> Email us if need any help </td>
+</tr>
+
+<tr>
+  <td> 12/06</td>
+  <td><a href="hw/hw3.pdf">Homework 3</a></td>
+    <td> Good luck! </td>
+</tr>
+ 
+-->
+
+  </tbody></table>
+
+<br>
+
+
+
+	<h3>Requirements and Grading</h3>
+
+ Homework assignments will count for 50% of the grade. There will be 3 assignments, roughly 3 weeks apart each. The homework will be proof-based, and are intended to be very challenging. Collaboration and discussion among students is allowed, even encouraged. However, students must write up the solutions independently. The remaining 50% of the grade is allocated to a final project. Students can team up for the project and each team should consist of 2 to 4 people. The project can: (1) study a <i>research</i> problem relevant to the course (ideally, also related to your own research) and write a report about your research findings; or (2) survey a related research topic by reading papers in that area and write an overview report of the area. More detailed instructions will come later. 
+<br> <br>
+There is no midterm or final for the course. 
+<br> <br>
+
+
+<b>Late Homework Policy </b>: Each student is allowed one late homework for at most two days from the due date. You may choose whichever homework to use this chance (or not use it). No additional late homework will be accepted.  
+
+<br>
+<br>
+
+
+	<!-- <h3>Projects</h3>
+	Some projects are more challenging than others. Use Piazza to request additional lab help hours in a week when more help is needed.
+	<table class="tg">
+	<tr>
+	<th>Due date</th>
+	<th>Project</th>
+	<th>Description</th>
+</tr>
+
+<tr>
+
+  <td>01/24</td>
+  <td><a href="./projects/project1.html">Project 1</a></td>
+    <td>Search</td>
+    </tr>
+
+    <tr><tr>
+  <td>02/18</td>
+  <td><a href="./projects/project2.html">Project 2</a></td>
+    <td>Multi-Agent Search </td>
+    </tr>
+
+    <tr><tr>
+  <td>03/11</td>
+  <td><a href="./projects/project3.html">Project 3</a></td>
+    <td>Reinforcement Learning</td>
+  </tr>
+
+    <tr><tr>
+  <td>03/18</td>
+  <td><a href="./projects/project4.html">Project 4</a></td>
+    <td>Ghostbusters (Optional) </td>
+  </tr>
+
+  </table>
+  
+  <h3>Homework</h3>
+  <table class="tg">
+  <tr>
+    <th>Due date</th>
+    <th>Homework</th>
+    <th>Description</th>
+  </tr>
+
+<tr>
+  <td>01/29</td>
+  <td><a href="./homework/Homework1.pdf">Homework 1</a></td>
+    <td>Search</td>
+</tr>
+
+<tr>
+  <td>02/16</td>
+  <td><a href="./homework/Homework2.pdf">Homework 2</a></td>
+    <td>CSPs and Games</td>
+</tr>
+
+<tr>
+  <td>03/14</td>
+  <td><a href="./homework/Homework3.pdf">Homework 3</a></td>
+    <td>MDPs and RL and Bayes Nets</td>
+</tr>
+  </table> -->
+
+<br>
+<br>
+
+<h3> Students with disabilities or learning needs </h3>
+We thrive to create a learning experience that is as accessible as possible. If you anticipate any issues related to the format, materials, or requirements of this course, please meet with me outside of class so we can explore potential options. Students with disabilities may also wish to work with the UChicago Student Disability Services to discuss a range of options to removing barriers in this course, including official accommodations. Please visit their website for information on this process and to apply for services online: <a href="https://disabilities.uchicago.edu/">disabilities.uchicago.edu</a>. If you have already been approved for accommodations through SDS, please send me your accommodation letter, and meet with me if needed, so we can develop an implementation plan together.
+	</div>
+	
+	
+</div></body></html>
