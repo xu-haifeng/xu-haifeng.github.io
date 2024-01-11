@@ -1,4 +1,5 @@
 var news = new Array();
+news[40] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Jan 2023 </td><td>&nbsp; Welcome postdoc fellow <a href="https://sa-esmaeili.github.io" target="_blank"> Seyed   Esmaeili </a> to join our group </td></tr>';
 news[39] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Sept 2023 </td><td>&nbsp; Some Fall visits/talks: DIMACS, Duke, Notre Dame, UMN, Yale, CMU, Princeton</td></tr>';
 news[38] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Sept 2023 </td><td>&nbsp; Check out the  <a href="https://www.ideal-institute.org/2023/08/31/fall-2023-special-program/" target="_blank"> IDEAL Special Program on Trustworthy  Data Science </a> that I am co-organizing </td></tr>';
 news[37] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; June 2023 </td><td>&nbsp; Invited talk at Google ML Research Seminar on <a href="http://www.haifeng-xu.com/sigma/files/EconRS_google_xu.pdf" target="_blank">the Dynamics and Economy of Recommender Systems</a></td></tr>';
