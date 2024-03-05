@@ -1,5 +1,5 @@
 var news = new Array();
-news[42] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; March 2023 </td><td>&nbsp; Excited to be named an <a href="https://ai2050.schmidtsciences.org/fellows/" target="_blank"> AI2050 Early Career Fellow</a>   </td></tr>';
+news[42] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; March 2023 </td><td>&nbsp; Haifeng is named an <a href="https://ai2050.schmidtsciences.org/fellows/" target="_blank"> AI2050 Early Career Fellow</a> (<a href="https://www.schmidtsciences.org/ai2050-early-career-fellows-2024/" target="_blank">Schmidt science news</a>, <a href="https://datascience.uchicago.edu/news/haifeng-xu-named-a-ai2050-early-career-fellow/" target="_blank"> DSI news</a>)  </td></tr>';
 news[41] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Feb 2023 </td><td>&nbsp; Some Spring visits/talks: AAAI24, Sunrise Future, Rutgers, HKUST, Midwest Workshop on Control, AAMAS24, ICLR24 </td></tr>';
 news[40] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Jan 2023 </td><td>&nbsp; Welcome postdoc fellow <a href="https://sa-esmaeili.github.io" target="_blank"> Seyed   Esmaeili </a> to join our group </td></tr>';
 news[39] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Sept 2023 </td><td>&nbsp; Some Fall visits/talks: DIMACS, Duke, Notre Dame, UMN, Yale, CMU, Princeton</td></tr>';
