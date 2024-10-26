@@ -1,0 +1,160 @@
+body {
+  font-family: verdana, helvetica, sans-serif;
+  font-size: 16px;
+  color: black;
+  background-color: #ffffff;
+}
+
+div.container {
+  max-width: 64rem;
+  float: center;
+  margin: auto;
+  padding: 0.5rem 0.5rem;
+  background-color: #fffafa;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+div.header {
+  background-color: #f0f0ff;
+  max-width: 100%;
+  padding: 0.5rem;
+}
+
+footer, article, main {
+  display: block;
+}
+
+
+ul.menubar {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+ul.menubar li {
+  float: left;
+  padding-right: 2rem;
+  padding-left: 0;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+ul.menubar li a {
+  color: blue;
+}
+
+ul.menubar li a.highlight {
+  color: red;
+}
+
+h1 {
+  font-size: 150%;
+  font-weight: bold;
+  margin: 0;
+}
+
+h2 {
+  font-size: 130%;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+p.subtitle {
+  font-size: 125%;
+} 
+
+table {
+  background-color: #fffafa;
+  border-collapse: collapse; 
+  width: 100%;
+  table-layout: auto;
+}
+
+th {
+  text-align: left;
+  padding-right: 0.5rem;
+}
+
+tr {
+  border-bottom: solid 1px gray;
+}
+
+tr.invited {
+  border-bottom: none;
+}
+
+tr.abstract {
+  font-size: 85%;
+}
+
+tr.empty {
+  border-bottom: none;
+}
+
+tr.break {
+  border-bottom: none;
+}
+
+tr.mybold {
+  border-bottom: none;
+  font-size: 100%;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+tr.session {
+  border-top: solid 1px black;
+  font-size: 115%;
+  font-weight: bold;
+  white-space: nowrap;
+  border-bottom: none;
+}
+
+tr.lastofsession {
+  border-bottom: solid 4px black;
+}
+
+td {
+  text-align: left;
+  padding: 0.3rem;
+  padding-right: 0.5rem;
+}
+
+
+
+
+
+@media screen and (max-width: 720px) {
+  div.container {
+    max-width: 100%;
+  }
+  div.header-left, div.header-center, div.header-right {
+    display: inline-block;
+  }
+  ul.menubar li {
+    float: initial;
+    padding: 0.2rem;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  tr.invited {
+    border-bottom: solid 1px gray;
+  }
+
+  tr.abstract {
+    display: none;
+  }
+
+  tr.session {
+    font-size: 100%;
+  }
+}
+
