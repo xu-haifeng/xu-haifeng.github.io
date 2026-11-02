@@ -1,4 +1,5 @@
 var news = new Array();
+news[63] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Nov 2026 </td><td>&nbsp; Check out <a href="https://www.wired.com/story/i-put-ai-agents-in-charge-of-a-fantasy-team/" target="_blank">WIRED\' coverage about Prophet Arena</a> </td></tr>';
 news[62] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Sept 2026 </td><td>&nbsp; We are selected as an <a href="https://arena.ai/blog/academic-partnerships-program-first-cohort" target="_blank">Arena academic fellow</a> </td></tr>'; 
 news[61] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; July 2026 </td><td>&nbsp; <a href="https://www.prophetarena.co/leaderboard/forecast" target="_blank">Prophet Arena</a> is featured in official evaluation  of Thinking Machines Lab\'s first LLM Model <a href="https://thinkingmachines.ai/news/introducing-inkling/" target="_blank">Inkling</a>  </td></tr>';  
 news[60] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Mar 2026 </td><td>&nbsp; Check our our <a href="https://forecasting-workshop.github.io/" target="_blank">Forecasting as a New Frontier of AI Intelligence </a> workshop at ICML-26, with exciting speakers! </td></tr>';  
@@ -88,7 +89,7 @@ news[0] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Sep 2018 </td><td>&nbsp; Haife
 // news[1] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Nov 2015 </td><td>&nbsp; On the program committee of <a href="http://ijcai-16.org">IJCAI 2016</a>  </td></tr>'; 
 // news[0] = '<tr><td align=right>&nbsp;&nbsp;&nbsp; Sep 2015 </td><td>&nbsp; Visit the <a href="https://simons.berkeley.edu/programs/economics2015">Economic and Computation</a> Program at the Simons Institute until December </td></tr>'; 
 
-var maxnewscnt = 10;
+var maxnewscnt = 8;
 function showNews(partial) {
   len = news.length;
   if (partial == true) {
